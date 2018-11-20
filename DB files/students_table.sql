@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS `cmit`.`students` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `firstname` VARCHAR(255) NOT NULL,
+  `lastname` VARCHAR(255) NOT NULL,
+  `grade` DECIMAL(4,2) UNSIGNED NULL,
+  `birth_date` DATE NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE);
